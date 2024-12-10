@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me Section</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-black text-white font-sans">
+  
+
+  
+  <nav class="bg-gray-800 hover:bg-gay-900 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-white font-bold text-xl">Mim Akter Sumi</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-5">
+         <a href="project.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Portfolio</a>
+        
+          <a href="home.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Home</a>
+          <a href="about.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">About</a>
+          <a href="skills.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">My Skills</a>
+          <a href="contact.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="project.html" class="block text-white bg-gray-400 hover:bg-gray-600 px-4 py-2 text-sm font-medium">Portfolio</a>
+    
+      <a href="home.html" class="block text-white bg-gray-500 hover:bg-gray-700 px-4 py-2 text-sm font-medium">Home</a>
+      <a href="about.html" class="block text-white bg-gray-400 hover:bg-gray-600 px-4 py-2 text-sm font-medium">About</a>
+      <a href="skills.html" class="block text-white bg-gray-500 hover:bg-gray-700 px-4 py-2 text-sm font-medium">My Skills</a>
+      <a href="contact.html" class="block text-white bg-gray-400  hover:bg-gray-700 px-4 py-2 text-sm font-medium">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+
+
+
+
+  
+  <!-- Hero Section -->
+  
+  <div class="flex flex-col-reverse md:flex-row items-center justify-center mt-10 px-10">
+    
+
+    <!-- Image Section -->
+    <div class="mt-10 md:mt-0 md:ml-10 md:w-1/2 flex justify-center">
+      <div class="relative">
+        <img
+          src="profile.jfif"
+          alt="Profile Picture"
+          class="w-64 h-64 rounded-full border-4 border-black"
+        />
+        <div
+          class="absolute inset-0 rounded-full border-4 border-pink-500 blur-md"
+        ></div>
+      </div>
+    </div>
+  
+   
+
+    <!-- Text Section -->
+    <div class="md:w-1/2 text-center md:text-left md:pl-10">
+      <h2 class="text-3xl md:text-4xl font-bold mt-10 md:mt-5">
+        Hi, I'm <span class="text-white-600 hover:text-pink-500">Mim Akter Sumi</span>
+      </h2>
+      <p class="mt-4 text-xl">
+        I'm a <span class="text-white-600 font-bold hover:text-pink-500">Frontend Developer</span>
+      </p>
+      <p class="mt-4 text-white-400">
+        The beauty of a web designer's work lies in their ability to craft experiences that not only captivate the eye but also connect the user to a brand's story.
+      </p>
+      <!-- Social Links -->
+      <div class="flex justify-center md:justify-start mt-6 space-x-4">
+        <a href="#" class="text-white-500 hover:text-pink-500">
+          <i class="fab fa-telegram text-2xl"></i>
+        </a>
+        <a href="#" class="text-white-500 hover:text-pink-500">
+          <i class="fab fa-facebook text-2xl"></i>
+        </a>
+        <a href="https://bd.linkedin.com/in/mim-akter-sumi-b3544a332?original_referer=https%3A%2F%2Fwww.google.com%2F" class="text-white-500 hover:text-pink-500">
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a href="https://www.01780052736.com" class="text-white-500 hover:text-pink-500">
+          <i class="fas fa-phone-alt text-2xl"></i>
+        </a>
+      </div>
+      <!-- Download CV Button -->
+      <a
+        href="mycv1.pdf"
+        class="inline-block mt-6 bg-pink-600 hover:bg-pink-900 text-white px-6 py-3 rounded-lg"
+      >
+      <i class="fa fa 1px fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
+
+  
+  
+
+  
+       
+
+  <div class="bg-black text-white-700 mt-10">
+    <div class="mx-auto p-6">
+      <div class="max-full mx-auto bg-black shadow-md p-6">
+        <h1 class="text-3xl font-bold hover:text-pink-500 text-center mb-4">About Me</h1>
+        <p class="text-center text-white-600 mb-6">
+          I'm a designer & developer with a passion for web design. I enjoy developing simple, clean, and slick websites that provide real value to the end user. Delivering work within time and budget, which meets clients' requirements properly.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 text-sm">
+          
+          <div>
+            <p class="font-bold">Name:</p>
+            <p>Mim Akter Sumi</p>
+          </div>
+          <div>
+            <p class="font-bold">Email:</p>
+            
+            <a href="https://www.sksumiais@gmail.com"> <p>sksumiais@gmail.com</p></a>
+          </div>
+          <div>
+            <p class="font-bold">Date of Birth:</p>
+            <p>6 September, 2000</p>
+          </div>
+          <div>
+            <p class="font-bold">From:</p>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+          
+          
+          
+      </div>
+    </div>
+
+
+    <h1 class="text-3xl font-bold text-center text-white mb-6 mt-14">
+    My Skills
+    </h1>
+  
+  <div class="bg-black flex justify-center items-center min-h-screen">
+    
+    <h1 class="text-3xl font-bold text-center text-white mb-6">
+        
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+      <!-- Card 1 -->
+      <div class="relative bg-white rounded-lg shadow-lg p-3 text-center rotate-130deg border-8 border-pink-700">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-700 text-white rounded-full p-3">
+          <i class="fas fa-code text-xl items-center">html</i>
+        </div>
+        <h3 class="text-xl text-white font-bold mt-6">Expert</h3>
+        <p class="text-gray-600 text-sm mt-8">
+          HTML (HyperText Markup Language) is the foundational language for creating and structuring content on the web, defining elements like text, images, and links to build the framework of a website.
+        </p>
+        
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="relative bg-white rounded-lg shadow-lg p-6 text-center border-8 border-pink-700">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 items-center bg-pink-700 text-white rounded-full p-3">
+          <i class="fas fa- text-xl items-center">css</i>
+        </div>
+        <h3 class="text-xl font-bold mt-6">Expert</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          CSS (Cascading Style Sheets) is the language used to style and design web pages, controlling layout, colors, fonts, and overall visual presentation to enhance user experience.
+        </p>
+        
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="relative bg-white rounded-lg shadow-lg p-6 text-center border-8 border-pink-700">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-700 text-white rounded-full p-3">
+          <i class="fas fa- text-xl items-center">bootstraop</i>
+        </div>
+        <h3 class="text-xl text-white font-bold mt-6">Expert</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Bootstrap is a powerful front-end framework that simplifies web development by providing pre-designed components, responsive grids, and utilities for creating modern, mobile-first websites quickly and efficiently.
+        </p>
+        
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="relative bg-white rounded-lg shadow-lg p-6 text-center border-8 border-pink-700">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-700 text-white rounded-full p-3">
+          <i class="fas fa- text-xl items-center">tailwind</i>
+        </div>
+        <h3 class="text-xl font-bold mt-6">Expert</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Tailwind CSS is a utility-first CSS framework that provides a highly customizable and efficient way to style web applications by using pre-defined classes directly in your HTML.
+        </p>
+        
+      </div>
+  
+      <!-- Card 5 -->
+      <div class="relative bg-white rounded-lg shadow-lg p-6 text-center border-8 border-pink-700">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-700 text-white rounded-full p-3">
+          <i class="fas fa-code-branch text-xl items-center">jquary</i>
+        </div>
+        <h3 class="text-xl font-bold mt-6">Expert</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          jQuery is a fast, lightweight JavaScript library that simplifies tasks like DOM manipulation, event handling, animations, and AJAX interactions, making web development easier and more efficient.
+        </p>
+      </div>
+     </div>
+    </div>
+  
+
+    <h1 class="text-3xl font-bold text-center text-white mb-6 mt-12">
+      My Projects
+      </h1>
+    
+    <div class="bg-black flex justify-center items-center min-h-screen">
+      
+      <h1 class="text-3xl font-bold text-center text-white mb-6">
+          
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 p-6">
+        <!-- Card 1 -->
+        <div class="card bg-base-100 w-64 shadow-xl">
+          <figure class="px">
+            <img
+              src="cake.jpeg"
+              alt=""
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-black"></h2>
+            <p class="text-black">Cake website</p>
+            <div class="card-actions">
+              
+              <a href=" https://mim-1234.github.io/cake/" class="block text-center bg-pink-700 text-white text-sm font-medium py-2 px-4
+               rounded-lg hover:bg-pink-900 transition">See More Details</a>
+             
+            </div>
+          </div>
+        </div>
+          
+        
+    
+        <!-- Card 2 -->
+        <div class="card bg-base-100 w-64 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="gold1.png"
+              alt=""
+              class="rounded-xl"/>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"></h2>
+            <p class="text-black">Gold Jewellery website</p>
+            <div class="card-actions">
+              <a href="https://mim-1234.github.io/gold/" class="block text-center bg-pink-700 text-white text-sm font-medium py-2 px-4
+              rounded-lg hover:bg-pink-900 transition">See More Details</a>
+            
+             
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="card bg-base-100 w-64 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="food(1).jpg"
+              alt=""
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"></h2>
+            <p class="text-black">Food Website</p>
+            <div class="card-actions">
+              <a href="https://mim-1234.github.io/food/" class="block text-center bg-pink-700 text-white text-sm font-medium py-2 px-4
+              rounded-lg hover:bg-pink-900 transition">See More Details</a>
+            
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="card bg-base-100 w-64 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="perso.png"
+              alt=""
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title"></h2>
+            <p class="text-black">Creating Portfolio</p>
+            <div class="card-actions">
+              <a href="https://mim-1234.github.io/personal-portfolio/" class="block text-center bg-pink-700 text-white text-sm font-medium py-2 px-4
+              rounded-lg hover:bg-pink-900 transition">See More Details</a>
+            
+            </div>
+          </div>
+        </div>
+    
+      
+       
+       </div>
+      </div>
+    
+     
+     
+      
+      
+    
+      
+   
+
+    <div class="bg-black text-white flex items-center justify-center min-h-screen">
+      <div class="w-full max-w-md p-6 bg-gray-800 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center text-white mb-4">
+          Contact Me
+        </h1>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              class="w-full px-4 py-2 text-black rounded-md focus:ring-2 focus:ring-pink-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              class="w-full px-4 py-2 text-black rounded-md focus:ring-2 focus:ring-pink-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="phone" class="sr-only">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter Your Phone No."
+              class="w-full px-4 py-2 text-black rounded-md focus:ring-2 focus:ring-pink-500 focus:outline-none"
+            />
+          </div>
+          <div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter Your Message"
+              rows="4"
+              class="w-full px-4 py-2 text-black rounded-md focus:ring-2 focus:ring-pink-500 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full py-2 bg-pink-600  hover:to-pink-700 text-white font-semibold rounded-md hover:bg-pink-700 transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>  
+  </div>
+   </body>
+
+
+
+   <footer class="bg-gray-900 text-white col-12 col-md-12 col-lg-12 col-xl-12 py-8">
+    <div class=" mx-auto text-center">
+      <h4 class="text-xl font-bold">Follow My Portfolio</h4>
+      
+      <div class="mt-6 space-x-4">
+        <a href="#" class="text-white hover:underline">Privacy Policy</a>
+        <a href="#" class="text-white hover:underline">Terms of Service</a>
+      </div>
+      <p class="mt-4">&copy; All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+

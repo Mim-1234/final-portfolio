@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me Section</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-black text-white font-sans">
+  
+
+  
+  <nav class="bg-gray-800 hover:bg-gay-900 ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-white font-bold text-xl">Mim Akter Sumi</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-5">
+         <a href="project.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Portfolio</a>
+        
+          <a href="home.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Home</a>
+          <a href="about.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">About</a>
+          <a href="skills.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">My Skills</a>
+          <a href="contact.html" class="text-white hover:bg-pink-700 px-3 py-2 rounded-md text-sm font-bold">Contact</a>
+        </div>
+
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+          <a href="project.html" class="block text-white bg-gray-400 hover:bg-gray-600 px-4 py-2 text-sm font-medium">Portfolio</a>
+      
+        <a href="home.html" class="block text-white bg-gray-500 hover:bg-gray-700 px-4 py-2 text-sm font-medium">Home</a>
+        <a href="about.html" class="block text-white bg-gray-400 hover:bg-gray-600 px-4 py-2 text-sm font-medium">About</a>
+        <a href="skills.html" class="block text-white bg-gray-500 hover:bg-gray-700 px-4 py-2 text-sm font-medium">My Skills</a>
+        <a href="contact.html" class="block text-white bg-gray-400  hover:bg-gray-700 px-4 py-2 text-sm font-medium">Contact</a>
+      </div>
+    </nav>
+  
+    <script>
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+  
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  
+  
+  
+  <div class="bg-black text-white-700 min-h-screen">
+    <div class="mx-auto p-6 ">
+     
+        <h1 class="text-3xl font-bold hover:text-pink-500 text-center mb-4 mt-14">About Me</h1>
+        <p class="text-center text-white-600 mb-6">
+          I'm a designer & developer with a passion for web design. I enjoy developing simple, clean, and slick websites that provide real value to the end user. Delivering work within time and budget, which meets clients' requirements properly.
+        </p>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 text-sm">
+          <div>
+            <p class="font-bold">Name:</p>
+            <p>Mim Akter Sumi</p>
+          </div>
+          <div>
+            <p class="font-bold">Email:</p>
+            <p>sksumiais@gmail.com</p>
+          </div>
+          <div>
+            <p class="font-bold">Date of Birth:</p>
+            <p>6 September, 2000</p>
+          </div>
+          <div>
+            <p class="font-bold">From:</p>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+   </div> 
+     <footer class="bg-gray-900 text-white col-12 col-md-12 col-lg-12 col-xl-12 py-8">
+        <div class=" mx-auto text-center">
+          <h4 class="text-xl font-bold">Follow My Portfolio</h4>
+          
+          <div class="mt-6 space-x-4">
+            <a href="#" class="text-white hover:white">Privacy Policy</a>
+            <a href="#" class="text-white hover:white">Terms of Service</a>
+          </div>
+          <p class="mt-4">&copy; All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+    </html>
+    
+    
+  
+    
+         
